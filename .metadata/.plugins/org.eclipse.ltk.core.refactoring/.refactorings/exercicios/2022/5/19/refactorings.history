@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;controle.Break2&apos; to &apos;BreakRotulado&apos;&#x0D;&#x0A;- Original project: &apos;exercicios&apos;&#x0D;&#x0A;- Original element: &apos;controle.Break2&apos;&#x0D;&#x0A;- Renamed element: &apos;controle.BreakRotulado&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Break2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;controle{Break2.java[Break2" matchStrategy="1" name="BreakRotulado" qualified="false" references="true" similarDeclarations="false" stamp="1651839075952" textual="false" version="1.0"/>
+</session>
