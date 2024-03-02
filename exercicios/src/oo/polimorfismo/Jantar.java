@@ -3,7 +3,6 @@ package oo.polimorfismo;
 public class Jantar {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Pessoa convidado = new Pessoa(99.65);
 		

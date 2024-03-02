@@ -9,7 +9,6 @@ public class ChecadaVsNaoChecada {
 		try {
 			geraErro1();
 		} catch (RuntimeException e) {
-			// TODO Auto-generated catch block
 			System.out.println("Erro gerarErro1: " + e.getMessage());
 		}
 		
@@ -23,7 +22,7 @@ public class ChecadaVsNaoChecada {
 		System.out.println("Fim");
 	}
 	
-	// Excecao não checada ou não verificada
+	// Excecao nï¿½o checada ou nï¿½o verificada
 	public static void geraErro1(){
 		throw new RuntimeException("Ocorreu um erro bem legal #01!");
 		

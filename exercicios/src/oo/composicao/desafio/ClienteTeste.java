@@ -3,7 +3,6 @@ package oo.composicao.desafio;
 public class ClienteTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Produto p1 = new Produto("Mouse", 100);
 		Produto p2 = new Produto("Teclado", 150);
 		Produto p3 = new Produto("Monitor", 500);

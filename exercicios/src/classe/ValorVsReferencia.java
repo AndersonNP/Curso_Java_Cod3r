@@ -3,9 +3,8 @@ package classe;
 public class ValorVsReferencia {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		double a = 2;
-		double b = a; //atribuição por valor
+		double b = a; //atribuiï¿½ï¿½o por valor
 		
 		a++;
 		b--;
@@ -16,7 +15,7 @@ public class ValorVsReferencia {
 		
 		p1.nome = "Teste";
 		
-		Produto p2 = p1; // atribuição por referencia
+		Produto p2 = p1; // atribuiï¿½ï¿½o por referencia
 		
 		p2.nome = "Arroz";
 		

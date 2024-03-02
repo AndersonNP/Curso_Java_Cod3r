@@ -19,25 +19,21 @@ public class Ferrari extends Carro implements Esportivo, Luxo{
 
 	@Override
 	public void ligarTurbo() {
-		// TODO Auto-generated method stub
 		setDelta(35);
 	}
 
 	@Override
 	public void desligarTurbo() {
-		// TODO Auto-generated method stub
 		setDelta(15);
 	}
 
 	@Override
 	public void ligarAr() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void desligarAr() {
-		// TODO Auto-generated method stub
 		
 	}
 

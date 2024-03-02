@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class Media {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("Quantas notas serão inseridas? ");
+		System.out.println("Quantas notas serï¿½o inseridas? ");
 		int qtdNotas = entrada.nextInt();
 		
 		double notas[] = new double[qtdNotas];
@@ -23,7 +22,7 @@ public class Media {
 			total += nota;
 		}
 		
-		System.out.println("media do aluno é " + total/qtdNotas);
+		System.out.println("media do aluno ï¿½ " + total/qtdNotas);
 	}
 
 }

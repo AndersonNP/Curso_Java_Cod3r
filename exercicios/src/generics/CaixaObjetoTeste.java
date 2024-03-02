@@ -3,7 +3,6 @@ package generics;
 public class CaixaObjetoTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		CaixaObjeto caixaA = new CaixaObjeto();
 		caixaA.guardar(2.3); 
 		
@@ -12,7 +11,7 @@ public class CaixaObjetoTeste {
 		
 		
 		CaixaObjeto caixaB = new CaixaObjeto();
-		caixaB.guardar("Olá"); 
+		caixaB.guardar("Olï¿½"); 
 		
 		String coisaB = (String) caixaB.abrir();
 		System.out.println(coisaB);

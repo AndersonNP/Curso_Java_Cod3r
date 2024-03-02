@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class If {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Scanner entrada = new Scanner(System.in);
 		
@@ -17,7 +16,7 @@ public class If {
 		}
 		
 		if(media < 7 && media >= 4.5) {
-			System.out.println("recuperação");
+			System.out.println("recuperaï¿½ï¿½o");
 		}
 		
 		if(media < 4.5 && media >= 0) {

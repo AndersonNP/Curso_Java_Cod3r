@@ -8,7 +8,6 @@ import java.util.stream.Stream;
 public class CriandoStreams {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Consumer<String> print = System.out::print;
 		Consumer<Integer> println = System.out::println;

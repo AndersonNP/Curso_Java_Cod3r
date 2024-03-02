@@ -7,7 +7,6 @@ public class ConjuntoBaguncado {
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		HashSet conjunto = new HashSet();
 		
@@ -17,11 +16,11 @@ public class ConjuntoBaguncado {
 		conjunto.add(1);
 		conjunto.add('x');
 		
-		System.out.println("tamanho é " + conjunto.size());
+		System.out.println("tamanho ï¿½ " + conjunto.size());
 	
 		System.out.println(conjunto.remove("Teste"));
 		System.out.println(conjunto.remove('x'));
-		System.out.println("tamanho é " + conjunto.size());
+		System.out.println("tamanho ï¿½ " + conjunto.size());
 		System.out.println(conjunto.contains('x'));
 		System.out.println(conjunto.contains(1));
 		
@@ -33,7 +32,7 @@ public class ConjuntoBaguncado {
 		System.out.println(nums);
 		System.out.println(conjunto);
 		
-		//conjunto.addAll(nums); //união entre dois conjuntos
+		//conjunto.addAll(nums); //uniï¿½o entre dois conjuntos
 		conjunto.retainAll(nums);
 		System.out.println(conjunto);
 		

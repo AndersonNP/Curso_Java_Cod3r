@@ -3,7 +3,6 @@ package controle;
 public class SwitchSemBreak {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String faixa = "branca";
 		
 		switch (faixa.toLowerCase()) {
@@ -23,7 +22,7 @@ public class SwitchSemBreak {
 			System.out.println("Sei o Heian Shodan");
 			break;
 		default:
-			System.out.println("Não sei nada");
+			System.out.println("Nï¿½o sei nada");
 
 		}
 		

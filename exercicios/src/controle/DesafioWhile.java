@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DesafioWhile {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Scanner entrada = new Scanner(System.in);
 
@@ -14,7 +13,7 @@ public class DesafioWhile {
 		int count = 0;
 		
 		while(nota != -1) {
-			System.out.println("Insira a próxima nota ou -1 para sair:");
+			System.out.println("Insira a prï¿½xima nota ou -1 para sair:");
 			nota = entrada.nextInt();
 			if(nota >= 0 && nota <= 10) {
 				total += nota;
@@ -22,7 +21,7 @@ public class DesafioWhile {
 			}
 		}
 		
-		System.out.println("O total de notas válidas é " + count + " e a média é " + total/count);
+		System.out.println("O total de notas vï¿½lidas ï¿½ " + count + " e a mï¿½dia ï¿½ " + total/count);
 
 		entrada.close();
 	}

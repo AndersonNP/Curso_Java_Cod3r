@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DesafioCalculadora {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		
 		Scanner entrada = new Scanner(System.in);
@@ -15,7 +14,7 @@ public class DesafioCalculadora {
 		System.out.println("Insira o segundo valor: ");
 		double valor2 = entrada.nextDouble();
 
-		System.out.println("Insira qual operação deseja realizar (+, -, *, /, %): ");
+		System.out.println("Insira qual operaï¿½ï¿½o deseja realizar (+, -, *, /, %): ");
 		String operacao = entrada.next();
 		
 		boolean soma = "+".equals(operacao);
@@ -30,7 +29,7 @@ public class DesafioCalculadora {
 						   multiplicacao ? valor1 * valor2 :
 						   valor1 % valor2;
 		
-		System.out.println("Resultado é " + resultado);
+		System.out.println("Resultado ï¿½ " + resultado);
 		
 		entrada.close();
 	}
