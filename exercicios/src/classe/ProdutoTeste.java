@@ -1,24 +1,16 @@
 package classe;
 
-
 public class ProdutoTeste {
-	
+
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Produto p1 = new Produto("Arroz", 5);
+		Produto p2 = new Produto("Feijão", 6);
 		
-		Produto p1 = new Produto();
-		p1.nome = "Notebook";
-		p1.preco = 4356.89;
-		p1.desconto = 0.25;
+		Produto.desconto = 0.5;
 		
-		var p2 = new Produto("Caneta Preta",25,0.6);
-		//p2.nome = "Caneta Preta";
-		//p2.preco = 12.56;
-		//p2.desconto = 0.29;
-		
-		System.out.println(p1.nome);
-		System.out.println(p2.nome);
-		
-		System.out.println(p1.precoComDeconto(0.1));
-		System.out.println(p2.precoComDeconto(0.1));
+		System.out.println(p1.precoComDesconto());
+		System.out.println(p2.precoComDesconto());
 	}
+
 }
