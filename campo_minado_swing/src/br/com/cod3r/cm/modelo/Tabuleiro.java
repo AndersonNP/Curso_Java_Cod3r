@@ -2,9 +2,10 @@ package br.com.cod3r.cm.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class Tabuleiro {
+public class Tabuleiro implements CampoObservador{
 	
 	
 	private int linhas;
@@ -12,7 +13,8 @@ public class Tabuleiro {
 	private int minas;
 	
 	private final List<Campo> campos = new ArrayList<>();
-
+	private final List<Consumer<Boolean>> observadores = new ArrayList<>();
+	
 	public Tabuleiro(int linhas, int colunas, int minas) {
 		this.linhas = linhas;
 		this.colunas = colunas;
@@ -21,6 +23,14 @@ public class Tabuleiro {
 		gerarCampos();
 		associarVizinhos();
 		sortearMinas();
+	}
+	
+	public void registrarObservador(Consumer<Boolean> observador) {
+		observadores.add(observador);
+	}
+	
+	private void notificarObservadores(boolean resultado) {
+		observadores.stream().forEach(o -> o.accept(resultado));
 	}
 	
 	public void abrir(int linha, int coluna) {
@@ -51,7 +61,9 @@ public class Tabuleiro {
 	private void gerarCampos() {
 		for (int linha = 0; linha < linhas; linha++) {
 			for (int coluna = 0; coluna < colunas; coluna++) {
-				campos.add(new Campo(linha, coluna));
+				Campo campo = new Campo(linha, coluna);
+				campo.registrarObservador(this);
+				campos.add(campo);
 			}
 		}
 	}
@@ -85,6 +97,18 @@ public class Tabuleiro {
 	public void reiniciar() {
 		campos.stream().forEach(c -> c.reinicar());
 		sortearMinas();
+	}
+
+	@Override
+	public void eventoOcorreu(Campo campo, CampoEvento evento) {
+		if(evento == CampoEvento.EXPLODIR) {
+			System.out.println("Perdeu...");
+			notificarObservadores(false);
+		}else {
+			System.out.println("Ganhou...");
+			notificarObservadores(true);
+		}
+		
 	}
 	
 	
