@@ -7,7 +7,6 @@ import java.util.function.Predicate;
 public class Match {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Aluno a1 = new Aluno("Ana", 7.1);
 		Aluno a2 = new Aluno("Luna", 8.1);

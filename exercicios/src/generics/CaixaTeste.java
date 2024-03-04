@@ -3,7 +3,6 @@ package generics;
 public class CaixaTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Caixa<String> caixaA = new Caixa<>();
 		

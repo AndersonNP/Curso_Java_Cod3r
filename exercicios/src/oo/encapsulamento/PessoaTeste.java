@@ -3,7 +3,6 @@ package oo.encapsulamento;
 public class PessoaTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Pessoa p1 = new Pessoa();
 		p1.setNome("Anderson");

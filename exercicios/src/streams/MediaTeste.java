@@ -3,7 +3,6 @@ package streams;
 public class MediaTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Media m1 = new Media().adicionar(8.3).adicionar(6.7);
 		Media m2 = new Media().adicionar(7.9).adicionar(6.6);

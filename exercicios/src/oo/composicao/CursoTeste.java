@@ -3,9 +3,8 @@ package oo.composicao;
 public class CursoTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		Aluno aluno1 = new Aluno("João");
+		Aluno aluno1 = new Aluno("Joï¿½o");
 		Aluno aluno2 = new Aluno("Maria");
 		Aluno aluno3 = new Aluno("Pedro");
 		
@@ -26,7 +25,7 @@ public class CursoTeste {
 		
 		for(Aluno aluno: curso3.alunos){
 			System.out.println("Estou matriculado no curso " + curso3.nome + "...");
-			System.out.println("... e o meu nome é " + aluno.nome);
+			System.out.println("... e o meu nome ï¿½ " + aluno.nome);
 			System.out.println();
 		}
 		

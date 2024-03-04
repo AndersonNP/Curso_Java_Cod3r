@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DesafioSemana {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
 		System.out.print("Insira o dia da semana: ");
 		String valor = entrada.nextLine();
@@ -16,7 +15,7 @@ public class DesafioSemana {
 			System.out.println("1");
 		}else if("segunda".equals(valor)) {
 			System.out.println("2");
-		}else if("terça".equals(valor)) {
+		}else if("terï¿½a".equals(valor)) {
 			System.out.println("3");
 		}else if("quarta".equals(valor)) {
 			System.out.println("4");
@@ -24,7 +23,7 @@ public class DesafioSemana {
 			System.out.println("5");
 		}else if("sexta".equals(valor)) {
 			System.out.println("6");
-		}else if("sábado".equals(valor)) {
+		}else if("sï¿½bado".equals(valor)) {
 			System.out.println("7");
 		}else {
 			System.out.println("Dia invalido");

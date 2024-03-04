@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class SwitchComBreak {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		String conceito ="";
 		Scanner entrada = new Scanner(System.in);
@@ -30,10 +29,10 @@ public class SwitchComBreak {
 			conceito = "D";
 			break;
 		default:
-			conceito = "Não informado";
+			conceito = "Nï¿½o informado";
 		}
 		
-		System.out.println("Conceito é " + conceito);
+		System.out.println("Conceito ï¿½ " + conceito);
 		entrada.close();
 	}
 

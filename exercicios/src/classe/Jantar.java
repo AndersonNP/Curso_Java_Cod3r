@@ -3,7 +3,6 @@ package classe;
 public class Jantar {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Pessoa p1 = new Pessoa("Anderson", 90);
 		
 		Comida c1 = new Comida("Pizza", 0.200);

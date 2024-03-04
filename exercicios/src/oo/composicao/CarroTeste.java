@@ -3,7 +3,6 @@ package oo.composicao;
 public class CarroTeste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Carro c1 = new Carro();
 		
 		System.out.println(c1.estaLigado());

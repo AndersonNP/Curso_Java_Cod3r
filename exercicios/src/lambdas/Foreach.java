@@ -6,7 +6,6 @@ import java.util.List;
 public class Foreach {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<String> aprovados = Arrays.asList("Ana", "Bia", "Lia", "Gui");
 		
 		System.out.println("Formata tradicional...");
@@ -33,7 +32,7 @@ public class Foreach {
 	}
 	
 	public static void meuImprimir(String nome){
-		System.out.println("Oi! Meu nome é " + nome);
+		System.out.println("Oi! Meu nome ï¿½ " + nome);
 	}
 	
 		
