@@ -7,10 +7,10 @@ public class Inferencia {
 		double a = 4.5;
 		System.out.println(a);
 		
-		var b = 4.5;
+		double b = 4.5;
 		System.out.println(b);
 		
-		var c = "Texto";
+		String c = "Texto";
 		System.out.println(c);
 
 		c = "Outro texto";
