@@ -35,21 +35,11 @@ public class Tabuleiro implements CampoObservador{
 	
 	public void abrir(int linha, int coluna) {
 	
-		try {
 			campos.stream()
 			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
 			.findFirst()
 			.ifPresent(c -> c.abrir());
-		} catch (Exception e) {
-			//FIXME Ajustar a implementração do método abrir
-			campos.forEach(c -> c.setAberto(true));
-			throw e;
-		}
 		
-	}
-	
-	private void mostrarMinas() {
-		 
 	}
 	
 	public void alternarMarcacao(int linha, int coluna) {
@@ -106,14 +96,15 @@ public class Tabuleiro implements CampoObservador{
 	@Override
 	public void eventoOcorreu(Campo campo, CampoEvento evento) {
 		if(evento == CampoEvento.EXPLODIR) {
-			System.out.println("Perdeu...");
+			mostrarMinas();
 			notificarObservadores(false);
-		}else {
-			System.out.println("Ganhou...");
+		}else if(objetivoAlcancado()){
 			notificarObservadores(true);
 		}
 		
 	}
 	
-	
+	private void mostrarMinas() {
+		campos.stream().filter(c -> c.isMinado()).forEach(c -> c.setAberto(true));
+	}
 }
