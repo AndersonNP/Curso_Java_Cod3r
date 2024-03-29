@@ -48,6 +48,10 @@ public class Tabuleiro implements CampoObservador{
 		
 	}
 	
+	private void mostrarMinas() {
+		 
+	}
+	
 	public void alternarMarcacao(int linha, int coluna) {
 		
 		campos.stream()
