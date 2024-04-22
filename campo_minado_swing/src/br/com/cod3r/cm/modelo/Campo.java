@@ -2,6 +2,7 @@ package br.com.cod3r.cm.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiConsumer;
 
 public class Campo {
 
@@ -53,12 +54,18 @@ public class Campo {
 	void alternarMarcacao() {
 		if (!aberto) {
 			marcado = !marcado;
+			
+			if(marcado) {
+				notificarObservadores(CampoEvento.MARCAR);
+			}else {
+				notificarObservadores(CampoEvento.DESMARCAR);
+			}
 		}
 		
 		if(marcado) {
 			notificarObservadores(CampoEvento.MARCAR);
 		}else {
-			notificarObservadores(CampoEvento.DESCMARCAR);
+			notificarObservadores(CampoEvento.DESMARCAR);
 		}
 	}
 
@@ -69,6 +76,7 @@ public class Campo {
 	boolean abrir() {
 
 		if (!aberto && !marcado) {
+
 			if (minado) {
 				notificarObservadores(CampoEvento.EXPLODIR);
 				return true;
@@ -114,6 +122,7 @@ public class Campo {
 
 	void setAberto(boolean aberto) {
 		this.aberto = aberto;
+
 		if(aberto) {
 			notificarObservadores(CampoEvento.ABRIR);
 		}

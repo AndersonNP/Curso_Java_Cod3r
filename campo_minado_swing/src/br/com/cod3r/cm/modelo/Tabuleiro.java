@@ -2,18 +2,18 @@ package br.com.cod3r.cm.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-/**
- * Classe que representa o tabuleiro do campo minado.
- */
-public class Tabuleiro implements CampoObservador {
 
-  private int linhas;
-  private int colunas;
-  private int minas;
-
-  private final List<Campo> campos = new ArrayList<>();
+public class Tabuleiro implements CampoObservador{
+	
+	
+	private int linhas;
+	private int colunas;
+	private int minas;
+	
+	private final List<Campo> campos = new ArrayList<>();
 
   /**
    * Construtor para iniciar o tabuleiro com o número especifico de linhas,
@@ -112,5 +112,6 @@ public class Tabuleiro implements CampoObservador {
     campos.stream().filter(c -> c.isMinado()).forEach(c -> c.setAberto(true));
 
   }
+
 
 }

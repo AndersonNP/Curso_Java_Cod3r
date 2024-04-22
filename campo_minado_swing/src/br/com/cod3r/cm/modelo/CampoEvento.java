@@ -1,7 +1,9 @@
 package br.com.cod3r.cm.modelo;
 
 public enum CampoEvento {
+
 	
-	ABRIR, MARCAR, DESCMARCAR, EXPLODIR;
+ABRIR,MARCAR,DESMARCAR,EXPLODIR;
+
 
 }
