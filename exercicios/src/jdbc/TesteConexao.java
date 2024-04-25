@@ -13,8 +13,16 @@ public class TesteConexao {
 //        String senha = "123456";
 //        
 //        Connection conexao = DriverManager.getConnection(url, usuario, senha);
+        String url = "jdbc:oracle:thin:@128.1.0.40:1523/TBM19C.TBM.COM";
+//        String url = "jdbc:oracle:thin:@128.1.0.40:1521:ORCL";
+        String usuario = "treina";
+        String senha = "treina";
         
-        Connection conexao = FabricaConexao.getConexao();
+        Connection conexao = DriverManager.getConnection(
+                url, usuario,
+                senha);
+        
+        //Connection conexao = FabricaConexao.getConexao();
         
         System.out.println("Conexão efetuada com sucesso!");
         
